@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Module 2 Of Assignment </title>
+    <link rel="stylesheet" href="m2.css">
+</head>
+<body>
+    <h1>Module 2(css And Css3)</h1>
+    <pre>
+        Q.1  What are the benefits of using CSS?
+        Ans. Easier To Maintain Ad update, Greater Consistancy In Design, More Formatting options,Light Weight Code,Faster Download Times,
+            Search Engine Optimization Benifits,Easy To Design,Easy To presenting different styles To different People,Greater Accessibility,
+            And Etc... These all are the advantages of Css.
+    </pre>
+    <pre>
+        Q.2  What are the disadvantages of CSS? 
+        Ans. Confusion due to many CSS levels-Beginners are more vulnerable to this issue, Cross-Browser Issues-Different browsers work differently, Security Issues- Security is important in today's world driven by technology and data.Extra Work for Developers These All are the disadvantages of Css.
+    </pre>
+    <pre>
+        Q.3  What is the difference between CSS2 and CSS3?
+        Ans.  CSS2 was comprised of a single document where CSS3 has its specifications divided into many individual modules, which makes 
+        CSS3 a whole lot easier to handle. With CSS3, the designers can now use special fonts, like those available in Google Fonts and Typecast. 
+        The CSS3 version supports more browsers than CSS2.CSS3 introduces several new selectors. Those new selectors square measure largely in an exceeding type of pseudo-elements and pseudo-categories.CSS3 introduces several properties attended with new values and units. It facilitates styling of backgrounds, borders, boxes, etc…
+    </pre>
+    <pre>
+        Q.4 Name a few CSS style components.
+        font-size, width, background-color, color, border, animation, transition, position, height, width, line-height, word-spacing etc....
+    </pre>
+    <pre>
+        Q.5  What do you understand by CSS opacity? 
+        Ans. The opacity CSS property sets the opacity of an element. Opacity is the degree to which content behind an element is hidden, 
+             and is the opposite of transparency.
+            To change the opacity of a background only, use the background property with a color value that allows for an alpha channel. For example:
+            background: rgba(0, 0, 0, 0.4);
+            0.4 is the value of opacity
+    </pre>
+    <pre>
+        Q.6  How can the background color of an element be changed? 
+        Ans. By giving value of color name to background-color property we can change background of particular element.
+             for example:
+             body {
+                background-color: blue;
+             }
+    </pre>
+    <pre>
+        Q.5  How can image repetition of the backup be controlled?
+        Ans. Image repetition of the backup be controlled by using background-size property.
+             For Example:
+             body{
+                background-size: cover ;
+             }
+    </pre>
+    <pre>
+        Q.7  What is the use of the background-position property?
+        Ans. The background-position property sets the starting position of a background image. By default, a background-image is placed at 
+             the top-left corner of an element, and repeated both vertically and horizontally.
+             For Example:
+             background-position: center top;
+    </pre>
+    <pre>
+        Q.8  Which property controls the image scroll in the background? 
+        Ans. The background-attachment property sets whether a background image scrolls with the rest of the page, or is fixed.
+             For Example:
+             background-attachment: fixed;
+    </pre>
+    <pre>
+        Q.9  Why should background and color be used as separate properties? 
+        Ans. It enhances the legibility of style sheets. The background property is a complex property in CSS, and if it is combined with 
+             color, the complexity will further increase.
+    </pre>
+    <pre>
+        Q.10  How to center block elements using CSS1?
+        Ans.  With css the way to center anything that's a block level element is with the margin property. One of the values of margin is
+             auto and by setting auto on the left and right margin our block level element will center itself.
+             for Example:
+             element {
+                width:500px;
+                margin: auto;
+            }
+    </pre>
+    <pre>
+        Q.11  How to maintain the CSS specifications?
+        Ans.  If there are two or more CSS rules that point to the same element, the selector with the highest specificity value will "win", 
+              and its style declaration will be applied to that HTML element.
+              Think of specificity as a score/rank that determines which style declaration is ultimately applied to an element.
+    </pre>
+    <pre>
+        Q.12  What are the ways to integrate CSS as a web page? 
+        Ans. Three Ways to Insert CSS
+            Inline CSS : it can be used in tag directly
+            Example:
+                    <pre> &lt;h1 style="color:blue;text-align:center;"&gt;This is a heading&lt;/h1&gt;</pre>
+            
+            Internal CSS:An internal style sheet may be used if one single HTML page has a unique style.The internal style is
+             defined inside the &lt;style&gt; element, inside the head section.
+           
+            External CSS:With an external style sheet, you can change the look of an entire website by changing just one file!
+                        Each HTML page must include a reference to the external style sheet file inside the <link> element, inside 
+                        the head section.
+           
+    </pre>
+
+    <pre>
+        Q.13  What is embedded style sheets?
+        Ans. Embedded Stylesheet: It allows you to define styles for a particular HTML document as a whole in one place. This is done by embedding
+         the <style></style> tags containing the CSS properties in the head of your document. Embedded style sheets are particularly useful for 
+         HTML documents that have unique style requirements from the rest of the documents in your project.
+        Example:
+        <p>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+            &lt;style&gt;
+                body {
+                    background-color: linen;
+                    }
+                h1 {
+                    color: maroon;
+                    margin-left: 40px;
+                   }
+            &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;h1>This is a heading&lt;/h1&gt;
+        &lt;p>This is a paragraph.&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+                </p>
+
+    </pre>
+
+    <pre>
+        Q.14  What are the external style sheets?
+        Ans. With an external style sheet, you can change the look of an entire website by changing just one file!
+        Each HTML page must include a reference to the external style sheet file inside the <link> element, inside 
+        the head section.
+
+        Example: 
+        <p>  
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+        &lt;link rel="stylesheet" href="style.css"&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;This is a heading&lt;/h1&gt;
+            &lt;p&gt;This is a paragraph.&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </p>
+            <h3>css file with name style.css</h3>
+    body {
+        background-color: lightblue;
+      }
+      
+      h1 {
+        color: green;
+        margin-left: 50px;
+      }
+    </pre>
+    <pre>
+        Q.15  What are the advantages and disadvantages of using external style sheets?
+        Ans. The benefits of using an external style sheet are:
+            everything is stored within a single file.
+            once changed/updated, the changes are reflected on all other pages that reference the stylesheet.
+            this makes it easier to maintain larger websites.
+            pages load quicker once the main CSS file has been cached.
+        The disadvantages of external css is:
+            Your pages may not be rendered correctly until the external CSS is loaded.
+            Uploading or linking to multiple CSS files can increase your sites download time.
+    </pre>
+    <pre>
+        Q.16  What is the meaning of the CSS selector? 
+        Ans.  CSS selectors are used to "find" (or select) the HTML elements you want to style.
+        We can divide CSS selectors into five categories:
+                Simple selectors (select elements based on name, id, class)
+                Combinator selectors (select elements based on a specific relationship between them)
+                Pseudo-class selectors (select elements based on a certain state)
+                Pseudo-elements selectors (select and style a part of an element)
+                Attribute selectors (select elements based on an attribute or attribute value)
+    </pre>
+    <pre>
+        Q.17  What are the media types allowed by CSS? 
+       Ans.  Media types describe the general category of a device. Except when using the not or only logical operators, the media type is
+             optional and the all type is implied.
+
+            all: Suitable for all devices.
+            print:Intended for paged material and documents viewed on a screen in print preview mode. 
+            screen:Intended primarily for screens.
+    </pre>
+    <pre>
+        Q.18  What is the rule set? 
+        Ans. The CSS Ruleset is used to apply a set of properties with some define values for the element or a specific set of
+         elements that are used in the HTML page.
+    </pre>
+    <pre>
+        Q.19 create a layout
+    </pre>
+    <div class="container">
+        <div class="box">
+           <div class="image">
+                <img src="client-1.png" alt="" class="img">
+            </div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi magnam, debitis nemo ipsa laborum aliquid cupiditate veritatis delectus suscipit, cum aliquam porro id omnis! Cum quia natus dolore autem labore!</p>
+                <button class="btn">View</button>
+                <button class="btn">Edit</button>
+                <button class="btn btn3">Agree</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="client-2.png" alt="" class="img">
+            </div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi magnam, debitis nemo ipsa laborum aliquid cupiditate veritatis delectus suscipit, cum aliquam porro id omnis! Cum quia natus dolore autem labore!</p>
+                <button class="btn">View</button>
+                <button class="btn">Edit</button>
+                <button class="btn btn3">Agree</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="client-3.png" alt="" class="img">
+            </div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi magnam, debitis nemo ipsa laborum aliquid cupiditate veritatis delectus suscipit, cum aliquam porro id omnis! Cum quia natus dolore autem labore!</p>
+                <button class="btn">View</button>
+                <button class="btn">Edit</button>
+                <button class="btn btn3">Agree</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="client-4.png" alt="" class="img">
+            </div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi magnam, debitis nemo ipsa laborum aliquid cupiditate veritatis delectus suscipit, cum aliquam porro id omnis! Cum quia natus dolore autem labore!</p>
+                <button class="btn">View</button>
+                <button class="btn">Edit</button>
+                <button class="btn btn3">Agree</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="client-5.png" alt="" class="img">
+            </div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi magnam, debitis nemo ipsa laborum aliquid cupiditate veritatis delectus suscipit, cum aliquam porro id omnis! Cum quia natus dolore autem labore!</p>
+                <button class="btn">View</button>
+                <button class="btn">Edit</button>
+                <button class="btn btn3">Agree</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="client-6.png" alt="" class="img">
+            </div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi magnam, debitis nemo ipsa laborum aliquid cupiditate veritatis delectus suscipit, cum aliquam porro id omnis! Cum quia natus dolore autem labore!</p>
+                <button class="btn">View</button>
+                <button class="btn">Edit</button>
+                <button class="btn btn3">Agree</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
